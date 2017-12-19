@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>商品详情页</title>
+</head>
+<body>
+@@include('header.inc')
+<div class="detail-banner clearfix">
+    <div class="w-left fl">
+        <div class="stage">
+            <img src="../images/detail/detail_img.jpg" alt="">
+        </div>
+        <div class="stage-nav">
+            <ul class="clearfix">
+                <li><img src="../images/detail/detail_img.jpg" alt=""></li>
+                <li><img src="../images/detail/detail_img2.jpg" alt=""></li>
+                <li><img src="../images/detail/detail_img3.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="w-right fl">
+        <span>产品名称</span>
+        <h3>雅诗兰黛XXX</h3>
+        <div class="price">
+            <h3>¥ 500</h3>
+        </div>
+        <p>雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛雅诗兰黛</p>
+        <ul>
+            <li><p>分类: <span>护肤品</span></p></li>
+            <li class="clearfix">
+                <p class="fl">规格: </p>
+                <div class="fl">
+                    <span>110ml</span>
+                    <span>200ml</span>
+                    <span>500ml</span>
+                </div>
+            </li>
+            <li><p>分类: <span>护肤品</span></p></li>
+        </ul>
+        <div class="jiache clearfix">
+            <div class="j-c-count fl clearfix">
+                <div class="minus fl">-</div>
+                <input type="text" value="1" class="number">
+                <div class="add fr">+</div>
+            </div>
+            <button class="fl">加入购物车</button>
+        </div>
+    </div>
+
+</div>
+<div class="detail-show">
+    <div class="detail-show-header">
+        <h3>商品介绍</h3>
+    </div>
+    <div class="detail-show-con">
+        <div class="d-s-part">
+            <img src="../images/detail/WechatIMG16.jpeg" alt="">
+        </div>
+        <div class="d-s-part">
+            <img src="../images/detail/WechatIMG16.jpeg" alt="">
+        </div>
+    </div>
+</div>
+
+<!--<div class=" detail-float">-->
+    <!--<div class="good-count-wrap">-->
+        <!--<div class="good-count">-->
+
+            <!--<div class="float-good">-->
+                <!--<img src="../images/detail/close.png" alt="" class="close">-->
+                <!--<div class="f-good-img">-->
+                    <!--<img src="../images/detail/detail_img.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="f-good-msg">-->
+                    <!--<p>兰蔻兰蔻兰蔻兰蔻兰蔻兰蔻兰蔻兰蔻</p>-->
+                    <!--<p class="price">¥ 560</p>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="d-f-size clearfix">-->
+                <!--<span class="fl">规格: </span>-->
+                <!--<ul class="size-list clearfix fl">-->
+                    <!--<li><span>50ml</span></li>-->
+                    <!--<li><span>100ml</span></li>-->
+                    <!--<li><span>150ml</span></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="float-count">-->
+                <!--<span>购买数量</span>-->
+                <!--<span class="fr">-->
+                    <!--<input type="button" value="-" class="btn1" />-->
+                    <!--<input type="text" value="1" class="number">-->
+                    <!--<input type="button" value="+"  class="btn2"/>-->
+                <!--</span>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="float-btn">-->
+            <!--<a href="#"><button class="f-gwc-btn">加入购物车</button></a>-->
+            <!--<a href="order.html"><button class="f-gm-btn">立即购买</button></a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div style="height: 50px"></div>-->
+<!--<div class="detail-footer clearfix">-->
+    <!--<div class="d-f-left fl clearfix">-->
+        <!--<div class="kf-btn fl">-->
+            <!--<span class="iconfont icon-weixin kefu-icon"></span>-->
+            <!--<p>客服</p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="d-f-right fl">-->
+        <!--<button id="jr-btn">加入购物车</button>-->
+        <!--<button id="gm-btn">立即购买</button>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="outline-footer">-->
+    <!--<h3>请到实体店购买</h3>-->
+<!--</div>-->
+<!--<div class="text1">-->
+    <!--<form>-->
+        <!--<input type="number" oninput="checkNum(this.value)" id="input"/>-->
+        <!--<input type="button"  value="确定"/>-->
+    <!--</form>-->
+    <!--<script>-->
+        <!--function checkNum(val) {-->
+            <!--document.getElementById('input').value = val >= 0 ? val : 0-->
+        <!--}-->
+    <!--</script>-->
+<!--</div>-->
+<!--<div class="alert fixed"></div>-->
+@@include('footer.inc'})
+</body>
+@@include('script.inc')
+<script src="../js/detail.js"></script>
+</html>

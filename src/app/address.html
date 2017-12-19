@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>收货地址管理</title>
+</head>
+<body>
+@@include('header.inc')
+<div class="add-wrap clearfix">
+    @@include('leftside.inc',{
+        "dizhi":"nav-selected"
+    })
+    <div class="address-wrap fr">
+        @@include('pctitle.inc',{
+        "pctitle":"地址管理"
+        })
+        <div class="address-new">
+            <button class="address-new-btn">+ 新建地址</button>
+        </div>
+        <ul class="address-item">
+            <li>
+                <div class="address-msg">
+                    <div class="msg-user"><span>擎天柱</span>&nbsp;&nbsp;</div>
+                    <div class="msg-phone"><span>1383838338</span></div>
+                    <div class="msg-address">银河系太阳区赛博坦星球机械城</div>
+                </div>
+                <div class="address-set clearfix">
+                    <div class="address-radio fl">
+                        <input type="radio" value="" name="isdefault" checked="checked">
+                        <img src="../images/address/c_checkbox_on.png" alt="">
+                        <span class="radio-label">默认地址</span>
+                    </div>
+                    <div class="fr address-editor">
+                        <button class="editor">编辑</button>
+                        <button class="delete">删除</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="address-msg">
+                    <div class="msg-user"><span>擎天柱</span>&nbsp;&nbsp;</div>
+                    <div class="msg-phone"><span>1383838338</span></div>
+                    <div class="msg-address">银河系太阳区赛博坦星球机械城</div>
+                </div>
+                <div class="address-set clearfix">
+                    <div class="address-radio fl">
+                        <input type="radio" value="" name="isdefault">
+                        <img src="../images/address/c_checkbox_off.png" alt="">
+                        <span class="radio-label">设为默认</span>
+                    </div>
+                    <div class="fr address-editor">
+                        <button class="editor">编辑</button>
+                        <button class="delete">删除</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="address-msg">
+                    <div class="msg-user"><span>擎天柱</span>&nbsp;&nbsp;</div>
+                    <div class="msg-phone"><span>1383838338</span></div>
+                    <div class="msg-address">银河系太阳区赛博坦星球机械城</div>
+                </div>
+                <div class="address-set clearfix">
+                    <div class="address-radio fl">
+                        <input type="radio" value="" name="isdefault">
+                        <img src="../images/address/c_checkbox_off.png" alt="">
+                        <span class="radio-label">设为默认</span>
+                    </div>
+                    <div class="fr address-editor">
+                        <button class="editor">编辑</button>
+                        <button class="delete">删除</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="edit">
+    <div class="edtor-wrap">
+        <span id="cha">×</span>
+        <form>
+            <div class="form-item">
+                <label>收货人:</label>
+                <input type="text" id="shr">
+            </div>
+            <div class="form-item">
+                <label>联系方式:</label>
+                <input type="text" id="lxfs">
+            </div>
+            <div class="form-item" id="city">
+                <span>所在地区:</span>
+                <span id="cityname"></span>
+                <span class="fr"> ></span>
+            </div>
+            <div class="form-item">
+                <label>详细地址:</label>
+                <input type="text" placeholder="区, 街道, 楼牌号等" id="xxdz">
+            </div>
+            <!--<div class="tap">-->
+
+            <!--</div>-->
+        </form>
+        <div class="bc-wrap">
+            <a href="#"><button class="bc-btn">保存</button></a>
+        </div>
+    </div>
+    <div class="city-mask">
+        <div class="city-list">
+            <div class="c-l-c-header clearfix">
+                <span class="fr close-city">×</span>
+                <h3>所在地区</h3>
+                <div class="select-address">
+                    <span class="fl ss"></span>
+                    <span class="fl qu"></span>
+                    <span class="fl dq"></span>
+                    <p class="fl xz">请选择</p>
+                </div>
+            </div>
+            <ul class="ss-list">
+                <!--<li class="city-list-item">-->
+                <!--<span>北京</span>-->
+                <!--</li>-->
+
+            </ul>
+            <ul class="qu-list">
+                <!--<li class="qu-list-item">-->
+                <!--<span>通州区</span>-->
+                <!--</li>-->
+            </ul>
+            <ul class="dq-list">
+                <!--<li class="dq-list-item">-->
+                <!--<span>全境</span>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</div>
+@@include('footer.inc')
+@@include('tanchuang.inc')
+</body>
+@@include('script.inc')
+<script src="../js/address.js"></script>
+<script src="../js/editor.js"></script>
+</html>

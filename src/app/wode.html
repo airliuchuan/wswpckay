@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>个人中心</title>
+</head>
+<body>
+    @@include('header.inc')
+    <div class="u-wrap clearfix">
+        @@include('leftside.inc',{
+            "geren":"nav-selected"
+        })
+        <div class="user-info-wrap fr">
+            @@include('pctitle.inc',{
+                "pctitle":"个人中心"
+            })
+            <div class="header clearfix">
+                <div class="ava fl">
+                    <img src="../images/wode/user-ava.png" alt="">
+                    <div class="ava-mask">
+                        <a href="wdeditor.html"><span>编辑资料</span></a>
+                    </div>
+                </div>
+                <div class="user-msg fl">
+                    <ul>
+                        <li><span>擎天柱</span><span class="dengji">会员</span></li>
+                        <li><p>上级: <span>元始天尊</span></p></li>
+                        <li><p>会员编号: <span>auto111</span></p></li>
+                    </ul>
+                </div>
+                <div class="user-menu fr">
+                    <ul class="clearfix">
+                        <li><a href="#"><span>代理管理</span></a></li>
+                        <li><a href="#"><span>订单管理</span></a></li>
+                        <li><a href="#"><span>地址管理</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jfye clearfix">
+                <div class="jfye-left">
+                    <div>
+                        <h3>账户余额</h3>
+                        <span>¥ 1111111</span>
+                    </div>
+                </div>
+                <div class="jfye-mid">
+                    <div>
+                        <h3>账户余额</h3>
+                        <span>¥ 1111111</span>
+                    </div>
+                </div>
+                <div class="jfye-right">
+                    <div>
+                        <h3>当前积分</h3>
+                        <span>111111</span>
+                    </div>
+                </div>
+            </div>
+            <div class="fy-title clearfix">
+                <span class="fl">提现记录</span>
+                <a href="#" class="fr">更多</a>
+            </div>
+            <ul class="txjl">
+                <li class="uls">
+                    <div class="txjl-title">
+                        <span>2017-11-27</span>
+                        <span class="fr txzt">已完成</span>
+                    </div>
+                    <div class="txjl-con">
+                        <p>姓名: <span>擎天柱</span></p>
+                        <p>提现金额: <span class="">¥ 200</span></p>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="txjl-title">
+                        <span>2017-11-27</span>
+                        <span class="fr txzt">提现失败</span>
+                    </div>
+                    <div class="txjl-con">
+                        <p>姓名: <span>擎天柱</span></p>
+                        <p>提现金额: <span class="">¥ 200</span></p>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="txjl-title">
+                        <span>2017-11-27</span>
+                        <span class="fr txzt">待付款</span>
+                    </div>
+                    <div class="txjl-con">
+                        <p>姓名: <span>擎天柱</span></p>
+                        <p>提现金额: <span class="">¥ 200</span></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    @@include('footer.inc')
+</body>
+@@include('script.inc')
+<script src="../js/wode.js"></script>
+</html>

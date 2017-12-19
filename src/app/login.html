@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>登录注册</title>
+</head>
+<body>
+
+<div class="login-wrap">
+    <div class="login animated" id="login">
+        <div class="login-header">
+            <h3>登录艾佳</h3>
+        </div>
+        <form>
+            <div class="clearfix">
+                <div class="login-icon fl"><i class="iconfont icon-yonghu"></i></div>
+                <input class="fl" type="text" placeholder="请输入用户名">
+            </div>
+            <div class="clearfix">
+                <div  class="login-icon fl"><i class="iconfont icon-mima"></i></div>
+                <input class="fl" type="password" placeholder="请输入密码">
+            </div>
+            <button class="login-btn">提交</button>
+        </form>
+        <div class="login-footer" id="tozhuce">
+            <a href="logon.html"><span>还没有账号?去注册</span></a>
+        </div>
+    </div>
+</div>
+@@include('footer.inc')
+</body>
+@@include('script.inc')
+<script src="../js/login.js"></script>
+</html>

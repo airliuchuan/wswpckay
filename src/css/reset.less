@@ -1,0 +1,102 @@
+/* 初始化浏览器默认值(tl) */
+* {box-sizing: border-box;padding: 0; margin: 0;-webkit-tap-highlight-color: rgba(0, 0, 0, 0)}
+body, div, p, form, ul, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6 {
+  padding: 0;margin: 0;
+}
+body,html {
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  font: @font-size-normal/1.2em @font-family-global;background-color: @white;color: @text-color-normal;
+  height:100%;
+  width: 100%;
+  font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Noto Sans CJK SC","Source Han Sans SC","Source Han Sans CN","Microsoft YaHei","Apple Color Emoji","Segoe UI Symbol",Arial,sans-serif;
+  font-style: normal;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: @font-size-normal;font-weight: normal;line-height: 1em;
+}
+ul, ol {
+  list-style: none;
+}
+input, textarea, button {
+  font-size: @font-size-normal; font-family: @font-family-global; margin: 0; padding: 2px; vertical-align: middle;
+}
+label {
+  cursor: pointer;
+}
+input[type="radio"], input[type="checkbox"] {
+  margin: 0 3px;
+}
+
+/* for modern browsers */
+img {
+  border: none; vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  text-align: center;
+}
+
+/* 全局链接 */
+a {
+  color: @text-color-light;
+  -webkit-tap-highlight-color:transparent;
+  //opacity: 0;
+}
+a:link {
+  //color: @text-color-heavy;
+  text-decoration: none;
+}
+a:visited {
+  color: @text-color-light;
+}
+a:hover {
+    text-decoration: none;
+ }
+//a:active {
+//  color: @main-color;
+//}
+/*清除浮动*/
+.clearfix {
+  zoom:1;
+  &:after{
+    display:block;
+    content: '';
+    clear: both;
+    overflow: hidden;
+    height: 0;
+  }
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+button {
+  border: none;
+  outline: none;
+  -webkit-appearance:none;
+  border-radius: 0;
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+
+  -webkit-appearance: none;
+  border-radius: 0;
+
+}
+
+textarea {  -webkit-appearance: none;}
+.swiper-container {
+  img {
+    width: 100%;
+  }
+}
+input {
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,105 @@
+.order-wrap {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: @pcwidth;
+  .order-cate {
+    padding: 0 @space;
+    background: @white;
+    ul {
+
+      li:first-child {
+        border-bottom: 2px solid @select-color;
+      }
+      li {
+        float: left;
+        margin-right: 20px;
+        font-size: 15px;
+        padding: @space 0;
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+  .order-list-wrap {
+    width: 1000px;
+    position: relative;
+  }
+  .order-list {
+    margin-bottom: 50px;
+    &>li {
+      border: 1px solid #ddd;
+      margin: @space 0;
+      background:@white;
+      .order-list-header {
+        border-bottom: 1px solid #ddd;
+        padding: @space;
+        .do-sth {
+          background: @theme-color;
+          color: @white;
+        }
+        p {
+          span {
+            margin-right: 100px;
+          }
+          float: left;
+          font-size: @font-size-normal;
+        }
+        &>span {
+          color: #999;
+          margin-right: 20px;
+          font-size: @font-size-normal;
+        }
+      }
+      .order-middle {
+        ul{
+          li {
+            background: @body-bg;
+            margin-top: 10px;
+            .order-item, .order-count {
+              height: 102px;
+              padding: 10px 0;
+              width: 200px;
+              text-align: center;
+              p {
+                &:first-child {
+                  margin-top: 25px;
+                  color: #999;
+                }
+                margin-bottom: 10px;
+              }
+            }
+            .order-count{
+              border-right: 1px solid #ddd;
+            }
+            .sin-item {
+              border-right: 1px solid #ddd;
+              padding: @space @space * 3;
+              width: 596px;
+              .order-left {
+                width: @ava-w-h + 30px;
+                height: @ava-w-h + 30px;
+                margin-right: @space * 10;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+              .order-msg {
+                width: 300px;
+                margin-top: 20px;
+                line-height: @line-height-normal;
+              }
+            }
+          }
+        }
+
+      }
+      .order-list-footer {
+        background: @white;
+        padding: 10px;
+        span {
+          margin-left: @space;
+        }
+      }
+    }
+  }
+}

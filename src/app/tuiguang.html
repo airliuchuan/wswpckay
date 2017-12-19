@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>推广</title>
+</head>
+<body>
+    @@include('header.inc')
+    <div class="car-wrap clearfix">
+        @@include('leftside.inc',{
+            "tuiguang":"nav-selected"
+        })
+        <div class="card-wrap fr">
+            @@include('pctitle.inc',{
+                "pctitle":"我的推广"
+            })
+            <div class="card-wrap">
+                <div class="card">
+                    <div class="card-title">
+                        <h3>卡片</h3>
+                    </div>
+                    <div class="card-qrcode">
+                        <img src="../images/tuiguang/1510551633.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+@@include('footer.inc')
+</body>
+@@include('script.inc')
+<script src=""></script>
+</html>

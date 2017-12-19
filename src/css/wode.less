@@ -1,0 +1,169 @@
+.u-wrap {
+  width: 1200px;
+  margin: 50px auto 0;
+}
+
+.user-info-wrap {
+  width: 1000px;
+  position: relative;
+  margin-bottom: 50px;
+  .txjl {
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    li {
+      &:last-child {
+        border-bottom: 0;
+      }
+      border-bottom: 1px solid #ddd;
+      .txjl-con {
+        padding:10px 50px;
+        p {
+          margin-bottom: 10px;
+        }
+      }
+      .txjl-title {
+        padding: 10px 50px;
+        border-bottom: 1px solid #ddd;
+        .txzt {
+          background: #666;
+          color:#fff;
+          width: 100px;
+          padding: 5px 0;
+          text-align: center;
+          margin-top: -4px;
+        }
+      }
+    }
+  }
+  .fy-title {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    border:1px solid #ddd;
+    border-bottom: 0;
+    span {
+      font-size: 15px;
+    }
+    a:hover {
+      color: @green;
+    }
+  }
+  .jfye {
+    width: 100%;
+    height: 60px;
+    background: @white;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: @space 0;
+    .jfye-left,.jfye-right,.jfye-mid {
+      height: 60px;
+      width: 33.3333%;
+      text-align: center;
+      float: left;
+      border-left: 0.5px solid #eee;
+      div {
+        margin-top: 10px;
+        h3 {
+          margin-bottom: @space;
+          font-size: @font-size-normal;
+        }
+        span {
+          font-size: @font-size-small-title;
+          color: @select-color;
+        }
+      }
+    }
+  }
+  .header {
+    width: 100%;
+    height: 100px;
+    background:#f2f2f2;
+    .user-menu {
+      ul {
+        margin-right: 30px;
+        line-height: 100px;
+        li {
+          float: left;
+          margin-left: 80px;
+          span {
+            color: #546d7e;
+          }
+        }
+      }
+
+    }
+    .user-msg {
+      margin-top: 18px;
+      li {
+        margin-bottom: 10px;
+        span {
+          vertical-align:middle;
+        }
+        .dengji {
+          display: inline-block;
+          background: @select-color;
+          border: #fff;
+          color: #fff;
+          border-radius: 5px;
+          padding: 2px 5px;
+          margin-left: 5px;
+        }
+      }
+    }
+    .ava {
+      position: relative;
+      width: 80px;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 40px;
+      overflow: hidden;
+      border-radius: 50%;
+      &:hover .ava-mask{
+        display: block;
+      }
+      .ava-mask {
+        display: none;
+        background: rgba(0,0,0,.6);
+        color: #fff;
+        text-align: center;
+        height: 100%;
+        line-height: 80px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+        span {
+          color: #fff;
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+}
+.daili-module {
+  font-size: 0;
+  li {
+    position: relative;
+    width: 33.33333%;
+    float: left;
+    border: 1px solid #eee;
+    .module-mask {
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

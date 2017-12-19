@@ -1,0 +1,51 @@
+.dl-detail {
+  width: 100%;
+  .dl-detail-header {
+    width: 100%;
+    padding: @space;
+    h3 {
+      font-size: @font-size-small-title;
+      color: @text-color-light;
+    }
+  }
+  .dl-detail-con {
+    &>li {
+      padding: 0 @space;
+      margin-bottom: @space;
+      background: @white;
+      .dl-d-c-header {
+        padding: @space * 1.5 0;
+        //border-top: 2px solid #eee;
+        border-bottom: 2px solid #eee;
+        font-size: @font-size-small-title;
+      }
+      .dl-d-c-con {
+        padding: @space * 1.5 0;
+        color: @text-color-light;
+        font-size: @font-size-small-title;
+        .dl-xl {
+          margin-bottom: @space;
+        }
+        .dl-yj {
+          h3 {
+            font-size: @font-size-small-title;
+            margin-right: @space;
+          }
+          .dl-d-c-con-price {
+            div {
+              margin-right: @space;
+
+              span {
+                &:first-child {
+                  margin-right: @space;
+                }
+                color: @select-color;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

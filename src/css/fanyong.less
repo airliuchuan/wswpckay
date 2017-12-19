@@ -1,0 +1,36 @@
+.f-wrap {
+  width:1200px;
+  margin: 50px auto 0;
+}
+.fy-wrap {
+  width: 1000px;
+  position: relative;
+}
+.fanyong {
+  border: 1px solid #ddd;
+  margin-bottom: 50px;
+  li {
+    &:first-child {
+      border-top: 0;
+    }
+    background: #fff;
+    padding: @space;
+    margin-bottom: @space;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    .fanyong-title {
+      padding-bottom: @space;
+      border-bottom: 1px solid #eee;
+      span {
+        font-size: @font-size-small-title;
+      }
+    }
+    .fanyong-con {
+      padding-top: @space;
+      font-size: @font-size-small-title;
+      span:last-child {
+        color: @select-color;
+      }
+    }
+  }
+}

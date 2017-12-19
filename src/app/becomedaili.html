@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>成为代理</title>
+</head>
+<body>
+<div class="grxx-wrap">
+    @@include('title.inc',{
+        "title": "成为代理"
+    })
+    <div class="header">
+        <div class="header-wrap" href="" class="clearfix">
+            <div class="header-left fl">
+                <div class="header-left-ava">
+                    <img src="../images/wode/user-ava.png" alt="">
+                </div>
+                <div class="dl-level">
+                    <span>会员</span>
+                </div>
+            </div>
+            <div class="header-right fl">
+                <p>昵称: <span>擎天柱</span></p>
+                <p>上级: <span>元始天尊</span></p>
+                <p>会员编号: <span>T111</span></p>
+                <p>加入时间: <span>2017-1-1</span></p>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <lable>用户名</lable>
+            <input type="text" value="擎天柱" id="user">
+        </li>
+        <li>
+            <lable>真实姓名</lable>
+            <input type="text" value="大柱" id="nick">
+        </li>
+        <li>
+            <lable>电话</lable>
+            <input type="number" value="13838383338" id="phone">
+        </li>
+        <li>
+            <lable>邮箱</lable>
+            <input type="email" value="ailiuchuan@123.com" id="email">
+        </li>
+        <li>
+            <lable>身份证</lable>
+            <input type="email" value="443332120091819485" id="id">
+        </li>
+    </ul>
+</div>
+@@include('tanchuang.inc')
+<div class="bc-wrap">
+    <a href="#"><button class="bc-btn">提交</button></a>
+</div>
+</body>
+@@include('script.inc')
+<script src="../js/becomedl.js"></script>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "store",
+  "description": "webpack和gulp进行自动化管理代码",
+  "main": "gulpfile.js",
+  "authors": [
+    "kay"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "webpack",
+    "gulp"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bowerComponent",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "zepto": "^1.2.0",
+    "swiper": "^4.0.2"
+  }
+}

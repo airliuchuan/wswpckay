@@ -1,0 +1,53 @@
+.wde-wrap {
+  width: 1200px;
+  margin: 50px auto 0;
+}
+.grxx-con {
+  padding:10px 150px 20px;
+}
+.grxx-wrap {
+  border: 1px solid #ddd;
+  width: 1000px;
+  .grxx-header {
+    padding: 12px 150px;
+    height: 56px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    h3 {
+      font-size: 15px;
+    }
+  }
+  .grxx-con {
+    &>ul {
+      padding:0 @space;
+      background: @white;
+      border-bottom: 1px solid #ddd;
+      li {
+        padding: @space * 2 @space/2;
+        position: relative;
+        padding-left: 100px;
+        label {
+          position: absolute;
+          left: 0;
+          vertical-align: middle;
+          font-size: 15px;
+          margin-top: 8px;
+        }
+        .input-wrap {
+          float:left;
+          border: 1px solid #ddd;
+          height: 30px;
+          width: 300px;
+          input {
+            color: @text-color-light;
+            vertical-align: middle;
+            margin-top: 4px;
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>结算页</title>
+</head>
+<body>
+@@include('header.inc')
+    <div class="dd-wrap">
+        <div class="dd-address">
+            <div class="dd-a-header clearfix">
+                <h3 class="fl">收货信息</h3>
+                <a href="#" class="fr"><span>新增收货地址</span></a>
+            </div>
+            <div class="dd-a-list">
+                <ul>
+                    <li>
+                        <span>擎天柱</span>
+                        <span>擎天柱 1银河系太阳区赛博坦星球机械城 1383838338</span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>擎天柱</span>
+                        <span>擎天柱 2银河系太阳区赛博坦星球机械城 1383838338</span>
+                        <span></span>
+                    </li>
+                    <li>
+                        <span>擎天柱</span>
+                        <span>擎天柱 3银河系太阳区赛博坦星球机械城 1383838338</span>
+                        <span></span>
+                    </li>
+                </ul>
+                <div class="dd-list-more">
+                    <span>更多地址</span>
+                </div>
+            </div>
+        </div>
+        <div class="zhifu">
+            @@include('title.inc', {
+                "title": "支付方式"
+            })
+            <div class="zhifu-list">
+                <span>余额支付</span>
+                <span>线下支付</span>
+            </div>
+        </div>
+        <div class="dd-list">
+            @@include('title.inc', {
+            "title": "运货清单"
+            })
+            <ul>
+                <li class="clearfix">
+                    <div class="d-l-left fl">
+                        <img src="../images/order/good.jpg" alt="">
+                    </div>
+                    <div class="d-l-right fr">
+                        <span>¥333</span>
+                        <p>× 1</p>
+                    </div>
+                    <div class="d-l-middle ">
+                        <p>兰蔻 兰蔻兰蔻兰蔻兰蔻兰蔻洗面奶</p>
+                        <span class="size">125ml</span>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="d-l-left fl">
+                        <img src="../images/order/good.jpg" alt="">
+                    </div>
+                    <div class="d-l-right fr">
+                        <span>¥333</span>
+                        <p>× 2</p>
+                    </div>
+                    <div class="d-l-middle ">
+                        <p>兰蔻 兰蔻兰蔻兰蔻兰蔻兰蔻洗面奶</p>
+                        <span class="size">125ml</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="pingzheng">
+            <div class="p-z-header">
+                <span>*</span>
+                <span>上传凭证</span>
+                <span>(最多上传3张图片)</span>
+            </div>
+            <form action="#" id="pz" class="clearfix">
+                <div class="up-input">
+                    <img src="../images/icon/upbg.png" alt="">
+                    <input type="file" accept="image/*" >
+                </div>
+                <div class="up-input">
+                    <img src="../images/icon/upbg.png" alt="">
+                    <input type="file" accept="image/*" >
+                </div>
+                <div class="up-input">
+                    <img src="../images/icon/upbg.png" alt="">
+                    <input type="file" accept="image/*" >
+                </div>
+            </form>
+        </div>
+        <div class="beizhu">
+            <span>备注: </span>
+            <input type="text" placeholder="如需备注请输入">
+        </div>
+    </div>
+    <div class="jiesuan-wrap">
+        <button class="fr">提交订单</button>
+        <span class="dd-price fr"> ¥ 300.00</span>
+        <span class="fr">合计: </span>
+    </div>
+</body>
+@@include('script.inc')
+<script src="../js/order.js"></script>
+</html>

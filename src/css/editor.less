@@ -1,0 +1,148 @@
+.edtor-wrap {
+  background: @white;
+  border:4px solid #ddd;
+  position: fixed;
+  width: 600px;
+  height: 300px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  transition: all ease 0.5s;
+  #cha {
+    position: absolute;
+    font-size: 25px;
+    top: 5px;
+    right: 5px;
+  }
+  input {
+    outline: none;
+    border: none;
+    font-size: @font-size-normal;
+    color: @text-color-heavy;
+    width: 70%;
+  }
+  .form-item {
+    width: 100%;
+    padding: @space * 1.5 @space;
+    border-bottom: 1px solid #eee;
+    font-size: @font-size-small-title;
+    #cityname {
+      font-size: @font-size-normal;
+      color: @text-color-heavy;
+    }
+  }
+}
+
+.bc-wrap {
+  width: 150px;
+  height: @nav-height;
+  background: @white;
+  text-align: center;
+  line-height: @nav-height;
+  font-size: 0;
+  .bc-btn {
+    width: 100%;
+    height: 30px;
+    background: green;
+    color: @white;
+  }
+}
+.city-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  .city-list {
+    overflow: hidden;
+    width: 600px;
+    height: 375px;
+    background: @white;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -187px;
+    .dq-list {
+      left: 200%;
+    }
+    .qu-list {
+      left: 100%;
+      //display: none;
+    }
+    .c-l-c-header {
+      text-align: center;
+      padding: @space *2;
+      border: 1px solid #eee;
+      padding-bottom: 0;
+      h3 {
+        margin-bottom: @space;
+        font-size: @font-size-small-title;
+        color: @text-color-light;
+      }
+      span {
+        font-size: @font-size-large;
+        color: @text-color-light;
+      }
+      .ss,.qu,.dq {
+        font-size: @font-size-normal;
+        color: @text-color-heavy;
+        margin-right: @space *2;
+        display: none;
+        border-bottom: 1px solid transparent;
+        padding-bottom: @space;
+      }
+
+      .xz {
+        color: @select-color;
+        font-size: @font-size-normal;
+        display: inline-block;
+        border-bottom: 1px solid @theme-color;
+        padding-bottom: @space;
+
+      }
+    }
+    ul{
+      transition: all 0.3s ease;
+      overflow: scroll;
+      position: absolute;
+      top: 77px;
+      bottom: 0;
+      width: 100%;
+      .city-list-item, .qu-list-item, .dq-list-item {
+        padding: @space  @space * 2;
+        color: @text-color-heavy;
+      }
+    }
+  }
+}
+
+
+.slideInUp {
+  animation: cityUp 0.5s ease 0s 1 ;
+  animation-fill-mode: forwards;
+}
+.slideOutDown {
+  animation: cityDown 0.8s ease 0s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes cityUp {
+  0% {transform: translateY(100%)}
+  100%{transform: translateY(0)}
+}
+
+@keyframes cityDown {
+  0% {transform: translateY(0)}
+  100%{transform: translateY(100%)}
+}
+
+//.fadeIn {
+//  animation: fadeIn 0.5s ease 1;
+//  animation-fill-mode: forwards;
+//}
+@keyframes fadeIn {
+  0% {opacity: 0; display: block}
+  100% {opacity: 1; display: block}
+}
