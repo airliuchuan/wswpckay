@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>模板页</title>
+</head>
+<body>
+@@include('header.inc')
+<div class="template-wrap clearfix">
+    @@include('leftside.inc')
+    <div class="template-right fr">
+        @@include('pctitle.inc',{
+        "pctitle":"这里是title"
+        })
+
+    </div>
+</div>
+
+@@include('footer.inc')
+</body>
+@@include('script.inc')
+</html>

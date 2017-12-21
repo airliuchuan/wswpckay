@@ -1,1 +1,0 @@
-webpackJsonp([10],{"./src/js/orderlist.js":function(s,r){function c(s){s.css("border-color","#e3473b").siblings().css("border-color","transparent")}$(function(){$(".order-cate li").click(function(){c($(this))})})}},["./src/js/orderlist.js"]);

@@ -1,3 +1,5 @@
+var devUrl = '../images';
+var Url = '/img/front';
 //计算总钱数
 function total(){
 	setTimeout(function(){
@@ -35,10 +37,10 @@ function sum(){
 
 	if ($("ul input[checked='checked']").length==$(".content li").length) {
 		$(".bottom input[type=checkbox]").attr("checked","checked");
-		$(".bottom input[type=checkbox]").next("img").attr("src","../images/gwc/c_checkbox_on.png");
+		$(".bottom input[type=checkbox]").next("img").attr("src",Url + "/gwc/c_checkbox_on.png");
 	}else{
 		$(".bottom input[type=checkbox]").removeAttr("checked");
-		$(".bottom input[type=checkbox]").next("img").attr("src","../images/gwc/c_checkbox_off.png");
+		$(".bottom input[type=checkbox]").next("img").attr("src",Url + "/gwc/c_checkbox_off.png");
 
 	}
 }
@@ -59,10 +61,10 @@ function checkbox($this){
 	if($this.attr('type')=="checkbox"){
 	   if ($this.attr('checked')=="checked") {
 		$this.removeAttr("checked");
-		 $this.next('img').attr("src","../images/gwc/c_checkbox_off.png");
+		 $this.next('img').attr("src",Url + "/gwc/c_checkbox_off.png");
 	   }else{
 		 $this.attr("checked","checked");
-		$this.next('img').attr("src","../images/gwc/c_checkbox_on.png");
+		$this.next('img').attr("src",Url + "/gwc/c_checkbox_on.png");
 	   }
 	}
 	//计算总钱数
@@ -96,10 +98,10 @@ $(".fr", '.gwc-header').click(function(){
 $('.bottom-label input').change(function(){
 		if ($(this).attr("checked")=="checked") {
 			$(".con input[type='checkbox']").removeAttr("checked");
-			$(".con input[type='checkbox']").next('img').attr("src","../images/gwc/c_checkbox_off.png");
+			$(".con input[type='checkbox']").next('img').attr("src",Url + "/gwc/c_checkbox_off.png");
 		}else{
 			$(".con input[type='checkbox']").attr("checked","checked");
-			$(".con input[type='checkbox']").next('img').attr("src","../images/gwc/c_checkbox_on.png");
+			$(".con input[type='checkbox']").next('img').attr("src",Url + "/gwc/c_checkbox_on.png");
 		}
     ifSelected();
 		checkbox($(this));

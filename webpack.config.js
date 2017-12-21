@@ -48,7 +48,6 @@ module.exports = {
             compress: {
                 warnings: true
             }
-        }),
-        new webpack.NamedModulesPlugin(),
+        })
     ]
 }

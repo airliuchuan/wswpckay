@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    @@include('head.inc')
+    <title>收货地址管理</title>
+</head>
+<body>
+@@include('header.inc')
+<div class="add-wrap clearfix">
+    @@include('leftside.inc',{
+    "mendian":"nav-selected"
+    })
+    <div class="address-wrap fr ">
+        <div class="pc-title clearfix">
+            <h3 class="fl">门店地址</h3>
+            <a href="order.html" class="fr"><button>确认选择</button></a>
+        </div>
+        <ul class="address-item">
+            <li>
+                <div class="address-msg">
+                    <div class="msg-user"><span>门店XX</span>&nbsp;&nbsp;</div>
+                    <!--<div class="msg-phone"><span>1383838338</span></div>-->
+                    <div class="msg-address">银河系太阳区赛博坦星球机械城</div>
+                </div>
+                <div class="address-set clearfix">
+                    <div class="address-radio fl">
+                        <input type="radio" value="" name="isdefault" checked="checked">
+                        <img src="../images/address/c_checkbox_on.png" alt="">
+                        <!--<span class="radio-label">默认地址</span>-->
+                    </div>
+                    <div class="fr address-editor">
+                        <button class="editor">编辑</button>
+                        <button class="delete">删除</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="address-msg">
+                    <div class="msg-user"><span>门店XX</span>&nbsp;&nbsp;</div>
+                    <!--<div class="msg-phone"><span>1383838338</span></div>-->
+                    <div class="msg-address">银河系太阳区赛博坦星球机械城</div>
+                </div>
+                <div class="address-set clearfix">
+                    <div class="address-radio fl">
+                        <input type="radio" value="" name="isdefault">
+                        <img src="../images/address/c_checkbox_off.png" alt="">
+                        <!--<span class="radio-label">设为默认</span>-->
+                    </div>
+                    <div class="fr address-editor">
+                        <button class="editor">编辑</button>
+                        <button class="delete">删除</button>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="address-msg">
+                    <div class="msg-user"><span>门店XX</span>&nbsp;&nbsp;</div>
+                    <!--<div class="msg-phone"><span>1383838338</span></div>-->
+                    <div class="msg-address">银河系太阳区赛博坦星球机械城</div>
+                </div>
+                <div class="address-set clearfix">
+                    <div class="address-radio fl">
+                        <input type="radio" value="" name="isdefault">
+                        <img src="../images/address/c_checkbox_off.png" alt="">
+                        <!--<span class="radio-label">设为默认</span>-->
+                    </div>
+                    <div class="fr address-editor">
+                        <button class="editor">编辑</button>
+                        <button class="delete">删除</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        @@include('fenye.inc')
+    </div>
+</div>
+@@include('footer.inc')
+@@include('tanchuang.inc')
+</body>
+@@include('script.inc')
+<script src="../js/address.js"></script>
+</html>

@@ -1,1 +1,0 @@
-webpackJsonp([9],{"./src/js/txjl.js":function(c,s){!function(){$.each($(".txzt"),function(c,s){"提现失败"==$(s).text()?$(s).css("background","red"):"待付款"==$(s).text()?$(s).css("background","#666"):$(s).css("background","#55a83f")})}()}},["./src/js/txjl.js"]);

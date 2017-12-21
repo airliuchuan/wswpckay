@@ -1,0 +1,1 @@
+webpackJsonp([9],{18:function(c,n){!function(){$.each($(".txzt"),function(c,n){"操作失败"==$(n).text()?$(n).css("background","red"):"待付款"==$(n).text()?$(n).css("background","#666"):$(n).css("background","#55a83f")})}()}},[18]);

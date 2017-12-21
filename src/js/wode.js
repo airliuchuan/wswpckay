@@ -18,9 +18,10 @@ function txzt() {
     })
 
 }
-//
-$('.logout').click(function(e) {
-    stopPropagetion(e);
-    alert('logout');
-});
 txzt();
+$('.fy-title span').eq(0).css('color', '#55a83f');
+$('.fy-title span').click(function() {
+    var more = $(this).index();
+    $(this).css('color','#55a83f').siblings().css('color', '#000');
+    $('#more' + more).css('display', 'block').siblings().css('display', 'none');
+});
